@@ -16,15 +16,7 @@
  *
  *  Date: 2017-11-27
  */
- 
-preferences {
-	section {
- 			input("unitformat", "enum", title: "What unit format do you want your thermostat to display temperature?", options: ["Celsius", "Fahrenheit"], defaultValue: "Celsius", required: false, displayDuringSetup: false)
-            input("lock", "enum", title: "Do you want to lock your thermostat's physical keypad?", options: ["No", "Yes"], defaultValue: "No", required: false, displayDuringSetup: false)
-            input("heatdetails", "enum", title: "Do you want a detailed operating state notification?", options: ["No", "Yes"], defaultValue: "No", required: false, displayDuringSetup: true)
-    		input("zipcode", "text", title: "ZipCode (Outdoor Temperature)", description: "[Do not use space](Blank = No Forecast)")
-    }
-}
+
 
 metadata {
 	definition (name: "Stelpro Ki ZigBee Thermostat", namespace: "Stelpro", author: "Stelpro") {
